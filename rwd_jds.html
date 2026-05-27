@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J&middot;estina</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="css/rwd.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/xeicon/2/xeicon.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+	<script src="js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/rwdapp.js"></script>
+    <script src="js/rwd_main.js"></script>
+
+</head>
+<body>
+
+    <header id="header"> <!-- 헤더 -->
+        <div class="header_box">
+            <h1><a href="rwd_jds.html"><img src="img/logo.png" alt="main logo"></a></h1>
+            <ul class="topmenu">
+                <li><button class="search_btn"><img src="img/search.png" alt="search-icon"></button></li>
+                <li><a href="#"><img src="img/heart.png" alt="heart"></a></li>
+                <li><a href="#"><img src="img/shoping.png" alt="shop"></a></li>
+                <li><a href="rwd_jds_login.php"><img src="img/user.png" alt="user"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <nav class="search_container"> <!-- 검색 창 -->
+        <div class="search_containerbox">
+            <div class="search_header">
+                <button class="search_closebtn"><img src="img/close.png" alt="close button"></button>
+                <div class="search_input">
+                    <form action="search.php" method="get" class="form_search">
+                        <div class="blind">
+                            <button class="search_input_img"><img src="img/search.png" alt="search btn"></button>
+                            <input type="search" placeholder="Search" id="search_input">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="search_main_container">
+                <div class="search_main_containerbox">
+                    <h3>베스트셀러</h3>
+                    <div class="search_main_wrapper">
+                        <ul class="search_list">
+                            <li class="search_item">
+                                <a href="#">
+                                    <div class="search_itembox">
+                                        <img src="img/s_list1.png" alt="best seller1">
+                                    </div>
+                                    <span>마리엘 진주 하트 귀걸이 S</span>
+                                </a>
+                            </li>
+
+                            <li class="search_item">
+                                <a href="#">
+                                    <div class="search_itembox">
+                                        <img src="img/s_list2.png" alt="best seller2">
+                                    </div>
+                                    <span>LALA J 목걸이</span>
+                                </a>
+                            </li>
+
+                            <li class="search_item">
+                                <a href="#">
+                                    <div class="search_itembox">
+                                        <img src="img/s_list3.png" alt="best seller3">
+                                    </div>
+                                    <span>LALA J 더블링 귀걸이</span>
+                                </a>
+                            </li>
+
+                            <li class="search_item">
+                                <a href="#">
+                                    <div class="search_itembox">
+                                        <img src="img/s_list4.png" alt="best seller4">
+                                    </div>
+                                    <span>CLOVIA DUELLO 목걸이</span>
+                                </a>
+                            </li>
+
+                            <li class="search_item">
+                                <a href="#">
+                                    <div class="search_itembox">
+                                        <img src="img/s_list5.png" alt="best seller5">
+                                    </div>
+                                    <span>CELESTIA 10K 랩그로운 다이아몬드 목걸이</span>
+                                </a>
+                            </li>
+
+                            <li class="search_item">
+                                <a href="#">
+                                    <div class="search_itembox">
+                                        <img src="img/s_list6.png" alt="best seller6">
+                                    </div>
+                                    <span>CELESTIA 미오엘로 목걸이</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="search_nav">
+                    <div class="search_nav_head">
+                        <h3>추천</h3>
+                    </div>
+                    <div class="search_nav_list">
+                        <ul>
+                            <li><a href="#">아이유 PICK</a></li>
+                            <li><a href="#">채령 PICK</a></li>
+                            <li><a href="#">CELESTIA</a></li>
+                            <li><a href="#">CLOVIA</a></li>
+                            <li><a href="#">BALLO</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+
+    <!-- ========================
+                full menu
+    ========================= -->
+    
+    <div class="p_menu">
+        <nav id="menu">
+            <ul id="gnb">
+                <li class="a1"><a href="#">BRAND</a>
+                    <div class="t_menu">
+                        <div class="t_menubox">
+                            <div class="menubox">
+                                <ul class="n1">
+                                    <li><a href="#">비전</a></li>
+                                    <li><a href="#">연혁</a></li>
+                                    <li><a href="#">사업영역</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>                    
+                </li>
+
+                <li class="a2"><a href="#">SHOP <img class="logoimg" src="img/logoimg.png" alt="로고 이미지"></a>
+                    <div class="t_menu">
+                        <div class="t_menubox">
+                            <div class="menubox">
+                                <ul class="n1">
+                                    <li><h3>JEWELRY</h3></li>
+                                    <li><a href="#">아이템</a></li>
+                                    <li><a href="#">컬렉션</a></li>
+                                    <li><a href="#">소재</a></li>
+                                    <li><a href="#">키즈</a></li>
+                                    <li><a href="#">SET</a></li>
+                                </ul>
+
+                                <ul class="n1">
+                                    <li><h3>BAG</h3></li>
+                                    <li><a href="#">아이템</a></li>
+                                    <li><a href="#">컬렉션</a></li>
+                                    <li><a href="#">소재</a></li>
+                                </ul>
+
+                                <ul class="n1">
+                                    <li><h3>WATCH</h3></li>
+                                    <li><a href="#">제이에스티나</a></li>
+                                    <li><a href="#">제이컬렉션</a></li>
+                                    <li><a href="#">로만손</a></li>
+                                    <li><a href="#">로만손컬렉션</a></li>
+                                </ul>
+
+                                <ul class="n1">
+                                    <li><h3>ACC</h3></li>
+                                    <li><a href="#">아이템</a></li>
+                                    <li><a href="#">컬렉션</a></li>
+                                    <li><a href="#">소재</a></li>
+                                </ul>
+
+                                <ul class="n1">
+                                    <li><h3>EXCLUSIVE</h3></li>
+                                    <li><a href="#">아이템</a></li>
+                                    <li><a href="#">컬렉션</a></li>
+                                    <li><a href="#">소재</a></li>
+                                </ul>
+
+                                <ul class="n1">
+                                    <li><h3>OUTLET</h3></li>
+                                    <li><a href="#">JEWELRY</a></li>
+                                    <li><a href="#">BAG</a></li>
+                                    <li><a href="#">WATCH</a></li>
+                                    <li><a href="#">ACC</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="menubox2">
+                                <ul>
+                                    <li><a href="#"><img src="img/menu1.png" alt="제품사진1"></a></li>
+                                    <li><a href="#"><img src="img/menu2.png" alt="제품사진1"></a></li>
+                                    <li><a href="#"><img src="img/menu3.png" alt="제품사진1"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="a3"><a href="#">PREMIUM</a>
+                    <div class="t_menu">
+                        <div class="premium_container">
+                            <div class="premium_wrap">
+                                <div class="premium_wrap_textbox">
+                                    <span>signature</span>
+                                    <h3>MORVE</h3>
+                                    <p>제이에스티나의 정수를 담은 프리미엄 컬렉션</p>
+                                    <a href="#">view more</a>
+                                </div>
+
+                                <div class="premium_wrap_imgbox">
+                                    <div class="premium_wrap_imglist">
+                                        <a href="#"><img src="img/pre1.png" alt="img"></a>
+                                    </div>
+
+                                    <div class="premium_wrap_imglist">
+                                        <a href="#"><img src="img/pre2.png" alt="img"></a>
+                                    </div>
+                                    
+                                    <div class="premium_wrap_imglist">
+                                        <a href="#"><img src="img/pre3.png" alt="img"></a>
+                                    </div>
+
+                                    <div class="premium_wrap_imglist">
+                                        <a href="#"><img src="img/pre4.png" alt="img"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="a4"><a href="#">EVENTs</a></li>
+                <li class="a5"><a href="#">고객센터</a></li>
+                <li class="a6"><a href="#">더보기</a></li>
+            </ul>
+
+            <ul id="gnb2">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">선물하기</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- ========================
+            위로가기 버튼
+    ========================= -->
+    <aside class="page_up">
+        <a href="#" class="page_up_btn"><img class="page_up_img" src="img/arrow-up.png" alt="up"></a>
+    </aside>
+
+    <div id="banner"> <!-- 메인 배너 -->
+        <div class="swiper-container01">
+            <ul class="banner_ul swiper-wrapper">
+
+                <li class="swiper-slide">
+                    <a href="#">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/pban1.png">
+                            <source media="(min-width: 768px)" srcset="img/tban1.png">
+                            <img src="img/mban1.png" alt="배너 1">
+                        </picture>
+                    </a>
+                </li>
+
+                <li class="swiper-slide">
+                    <a href="#">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/pban2.png">
+                            <source media="(min-width: 768px)" srcset="img/tban2.png">
+                            <img src="img/mban2.png" alt="배너 2">
+                        </picture>
+                    </a>
+                </li>
+
+
+                <li class="swiper-slide">
+                    <a href="#">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/pban3.png">
+                            <source media="(min-width: 768px)" srcset="img/tban3.png">
+                            <img src="img/mban3.png" alt="배너 3">
+                        </picture>
+                    </a>
+                </li>
+
+                <li class="swiper-slide">
+                    <a href="#">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/pban4.png">
+                            <source media="(min-width: 768px)" srcset="img/tban4.png">
+                            <img src="img/mban4.png" alt="배너 3">
+                        </picture>
+                    </a>
+                </li>
+
+                <li class="swiper-slide">
+                    <a href="#">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/pban5.png">
+                            <source media="(min-width: 768px)" srcset="img/tban5.png">
+                            <img src="img/mban5.png" alt="배너 3">
+                        </picture>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="roll"> <!-- roll -->
+            <!-- <a href="#" class="active"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a> -->
+        </div>
+
+        <div id="arrow"> <!-- arrow -->
+            <a href="#" class="left"><img src="img/arrow_left2.png" alt="left"></a>
+            <a href="#" class="right"><img src="img/arrow_right2.png" alt="arrow-right"></a>
+        </div>
+    </div>
+
+
+    <nav id="menu_icon">    <!-- Icon -->
+        <ul class="icons">
+            <li>
+                <a href="#"><img src="img/icon1_v2.png " alt="주얼리"><p>주얼리</p></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/icon2_v2.png" alt="핸드백"><p>핸드백</p></a>
+                
+            </li>
+            <li>
+                <a href="#"><img src="img/icon3_v2.png" alt="시계"><p>시계</p></a>
+                
+            </li>
+            <li>
+                <a href="#"><img src="img/icon4_v2.png" alt="ACC"><p>ACC</p></a>
+                
+            </li>
+        </ul>
+
+        <ul class="icons">
+            <li>
+                <a href="#"><img src="img/icon5_v3.png" alt="프리미엄"><p>프리미엄</p></a>
+                
+            </li>
+            <li>
+                <a href="#"><img src="img/icon6_v2.png" alt="리뷰"><p>리뷰</p></a>
+                
+            </li>
+            <li>
+                <a href="#"><img src="img/icon7_v2.png" alt="앱혜택"><p>앱혜택</p></a>
+                
+            </li>
+            <li>
+                <a href="#"><img src="img/icon8.png" alt="아울렛"><p>아울렛</p></a>
+                
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- ========================
+            about J.ESTINA
+    ========================= -->
+
+    <div class="aboutJ">
+        <div class="aboutJ_img wp2">
+            <img src="img/about_j.jpg" alt="제이에스티나 매장 사진">
+        </div>
+        <div class="aboutJ_textwrap wp1">
+            <span class="aboutJ_text1 font_m">About J &middot; ESTINA</span>
+            <span class="aboutJ_text2 font_m">빛나는 모든 순간을 함께하는<br>GLOBAL LIFESTYLE CREATOR<br>J.ESTINA</span>
+            <hr class="aboutJ_line">
+            <span class="aboutJ_text3 font_m">Modern, Elegant, and Radiant.</span>
+            <span class="aboutJ_text4">일상을 특별하게 만드는 우아한 포인트. 제이에스티나는 기품 있는 모티브와
+                 현대적인 감각을 결합하여, 당신의 모든 순간이 가장 눈부시게 빛날 수 있도록 감각적인 라이프스타일
+                  컬렉션을 제안합니다.</span>
+        </div>
+    </div>
+
+    <div id="sub_banner">  <!-- 서브 배너 -->
+        <ul>
+            <li><a href="#"><img src="img/sub_ban1.png" alt="서브 배너1"></a></li>
+            <li><a href="#"><img src="img/sub_ban2.png" alt="서브 배너2"></a></li>
+        </ul>
+    </div>
+
+
+
+
+
+    <!--==================
+           MD's PICK
+    ====================-->
+
+
+    <section class="md_section">
+        <div class="md_section-header">
+            <h2>MD's PICK</h2>
+            <a href="#" class="md_arrow"><img src="img/go_white.png" alt="go to MD's pick"></a>
+        </div>
+
+
+        <div class="md_slider_wrap">
+            <div class="md_swiper md_pickSwiper">
+                <div class="swiper-wrapper md_wrapper slider">
+                    <div class="swiper-slide md_inner ">
+                        <div class="md_banner">
+                            <a href="#"><img src="img/md1.png" alt="single earing"></a>
+                        </div>
+
+                        <div class="md_sub">
+                            <div class="text_wrap">
+                                <p class="md_subtext">매력적인 아이템, 피어싱</p>
+                                <h3 class="md_maintitle">시선을 사로 잡는 싱글 이어링</h3>
+                            </div>
+
+                            <hr class="md_divider">
+
+                            <ul class="md_product_list">
+                                <li class="md_product_item">
+                                    <div class="md_item_img"><a href="#"><img src="img/md1_sub1.png" alt="귀걸이1"></a></div>
+                                    <div class="md_item_info">
+                                        <p class="md_item_name">[아이유 PICK] CLOVIA 14K 싱글 귀걸이</p>
+                                        <p class="md_item_price">&#8361; 150,400원</p>
+                                    </div>
+                                    <button class="md_cart_btn"><img src="img/shoping.png" alt="쇼핑 카트에 담기"></button>
+                                </li>
+
+                                <li class="md_product_item">
+                                    <div class="md_item_img"><a href="#"><img src="img/md1_sub2.png" alt="귀걸이2"></a></div>
+                                    <div class="md_item_info">
+                                        <p class="md_item_name">[아이유 PICK] J.Livera 14K 싱글 귀걸이</p>
+                                        <p class="md_item_price">&#8361; 150,400원</p>
+                                    </div>
+                                    <button class="md_cart_btn"><img src="img/shoping.png" alt="쇼핑 카트에 담기"></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide md_inner">
+                        <div class="md_banner">
+                            <a href="#"><img src="img/md2.png" alt="lucky breeze"></a>
+                        </div>
+
+                        <div class="md_sub">
+                            <div class="text_wrap">
+                                <p class="md_subtext">Lucky Breeze</p>
+                                <h3 class="md_maintitle">26 SS NEW COLLECTION</h3>
+                            </div>
+
+                            <hr class="md_divider">
+
+                            <ul class="md_product_list">
+                                <li class="md_product_item">
+                                    <div class="md_item_img"><a href="#"><img src="img/md2_sub1.png" alt="목걸이"></a></div>
+                                    <div class="md_item_info">
+                                        <p class="md_item_name">[아이유 PICK] BREEZE 14K 목걸이</p>
+                                        <p class="md_item_price">&#8361; 682,200원</p>
+                                    </div>
+                                    <button class="md_cart_btn"><img src="img/shoping.png" alt="쇼핑 카트에 담기"></button>
+                                </li>
+
+                                <li class="md_product_item">
+                                    <div class="md_item_img"><a href="#"><img src="img/md2_sub2.png" alt="팔찌"></a></div>
+                                    <div class="md_item_info">
+                                        <p class="md_item_name">[아이유 PICK] BREEZE 14K 팔찌</p>
+                                        <p class="md_item_price">&#8361; 718,200원</p>
+                                    </div>
+                                    <button class="md_cart_btn"><img src="img/shoping.png" alt="쇼핑 카트에 담기"></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide md_inner">
+                        <div class="md_banner">
+                            <a href="#"><img src="img/md3.png" alt="single earing"></a>
+                        </div>
+
+                        <div class="md_sub">
+                            <div class="text_wrap">
+                                <p class="md_subtext">손목에 반짝임을 더할 타이밍</p>
+                                <h3 class="md_maintitle">데일리 팔찌 아이템</h3>
+                            </div>
+
+                            <hr class="md_divider">
+
+                            <ul class="md_product_list">
+                                <li class="md_product_item">
+                                    <div class="md_item_img"><a href="#"><img src="img/md3_sub1.png" alt="팔찌"></a></div>
+                                    <div class="md_item_info">
+                                        <p class="md_item_name">[아이유 PICK] 마리엘 진주 비드팔찌</p>
+                                        <p class="md_item_price">&#8361; 51,750원</p>
+                                    </div>
+                                    <button class="md_cart_btn"><img src="img/shoping.png" alt="쇼핑 카트에 담기"></button>
+                                </li>
+
+                                <li class="md_product_item">
+                                    <div class="md_item_img"><a href="#"><img src="img/md3_sub2.png" alt="귀걸이"></a></div>
+                                    <div class="md_item_info">
+                                        <p class="md_item_name">[아이유 PICK] LALA J 2줄 팔찌</p>
+                                        <p class="md_item_price">&#8361; 63,200원</p>
+                                    </div>
+                                    <button class="md_cart_btn"><img src="img/shoping.png" alt="쇼핑 카트에 담기"></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+
+
+    <!--==================
+           Promotion
+    ====================-->
+
+    <article id="promotion">
+        <div class="promo_container">
+            <div class="promo_head">
+                <h2>기획전</h2>
+                <a href="#"><img src="img/go.png" alt="자세히 보기"></a>
+            </div>
+            
+            <div class="promo_wrap">
+                <div class="promo_wrapper">
+                    <div class="promo_slide">
+                        <div class="promo_banner">
+                            <img src="img/promo1.png" alt="promotion1 banner">
+                        </div>
+
+                        <div class="promo_content">
+                            <div class="promo_subhead">
+                                <div class="promo_subtext">
+                                    <p>레더 vs 스웨이드</p>
+                                    <span>더 짙어진 계절, 더 깊어진 고민</span>
+                                </div>
+                            </div>
+
+                            <div class="promo_item">
+                                <div class="promo_itembox">
+                                    <ul class="item_list">
+                                        <li class="item_unit1">
+                                            <div class="promo_thumb">
+                                                <a href="#"><img src="img/promo1-1.png" alt="promotion item1"></a>
+                                            </div>
+
+                                            <div class="promo_info">
+                                                <h4>VERO 스웨이더 MD 숄더 BR</h4>
+                                                <p class="price_origin">&#8361; 198,000</p>
+                                                <span class="price_sale">&#8361; 158,400</span>
+                                            </div>
+
+                                            <div class="promo_icon">
+                                                <a href="#"><img src="img/shoping.png" alt="장바구니에 담기"></a>
+                                            </div>
+                                        </li>
+
+                                        <li class="item_unit2">
+                                            <div class="promo_thumb">
+                                                <a href="#"><img src="img/promo1-2.png" alt="promotion item2"></a>
+                                            </div>
+
+                                            <div class="promo_info">
+                                                <h4>REVE LG 메신저 BK</h4>
+                                                <p class="price_origin">&#8361; 218,000</p>
+                                                <span class="price_sale">&#8361; 174,400</span>
+                                            </div>
+
+                                            <div class="promo_icon">
+                                                <a href="#"><img src="img/shoping.png" alt="장바구니에 담기"></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promo_slide">
+                        <div class="promo_banner">
+                            <img src="img/promo2.png" alt="promotion2 banner">
+                        </div>
+
+                        <div class="promo_content">
+                            <div class="promo_subhead">
+                                <div class="promo_subtext">
+                                    <p>로즈골드 vs 실버</p>
+                                    <span>찰나의 순간마저 놓치고 싶지 않은 당신에게</span>
+                                </div>
+                            </div>
+
+                            <div class="promo_item">
+                                <div class="promo_itembox">
+                                    <ul class="item_list">
+                                        <li class="item_unit1">
+                                            <div class="promo_thumb">
+                                                <a href="#"><img src="img/promo2-1.png" alt="promotion item1"></a>
+                                            </div>
+
+                                            <div class="promo_info">
+                                                <h4>MIOELLO 댄싱스톤 메탈시계 - 로즈골드</h4>
+                                                <p class="price_origin">&#8361; 400,000</p>
+                                                <span class="price_sale">&#8361; 380,000</span>
+                                            </div>
+
+                                            <div class="promo_icon">
+                                                <a href="#"><img src="img/shoping.png" alt="장바구니에 담기"></a>
+                                            </div>
+                                        </li>
+
+                                        <li class="item_unit2">
+                                            <div class="promo_thumb">
+                                                <a href="#"><img src="img/promo2-2.png" alt="promotion item2"></a>
+                                            </div>
+
+                                            <div class="promo_info">
+                                                <h4>MIOELLO 댄싱스톤 메탈시계 - 화이트</h4>
+                                                <p class="price_origin">&#8361; 400,000</p>
+                                                <span class="price_sale">&#8361; 380,000</span>
+                                            </div>
+
+                                            <div class="promo_icon">
+                                                <a href="#"><img src="img/shoping.png" alt="장바구니에 담기"></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promo_slide">
+                        <div class="promo_banner">
+                            <img src="img/promo3.png" alt="promotion3 banner">
+                        </div>
+
+                        <div class="promo_content">
+                            <div class="promo_subhead">
+                                <div class="promo_subtext">
+                                    <p>곡선 vs 엣지</p>
+                                    <span>당신의 무드에 따라 달라지는 빛의 각도</span>
+                                </div>
+                            </div>
+
+                            <div class="promo_item">
+                                <div class="promo_itembox">
+                                    <ul class="item_list">
+                                        <li class="item_unit1">
+                                            <div class="promo_thumb">
+                                                <a href="#"><img src="img/promo3-1.png" alt="promotion item1"></a>
+                                            </div>
+
+                                            <div class="promo_info">
+                                                <h4>JOELLE LUCKY TIARA 14K 반지</h4>
+                                                <p class="price_origin">&#8361; 268,000</p>
+                                                <span class="price_sale">&#8361; 241,200</span>
+                                            </div>
+
+                                            <div class="promo_icon">
+                                                <a href="#"><img src="img/shoping.png" alt="장바구니에 담기"></a>
+                                            </div>
+                                        </li>
+
+                                        <li class="item_unit2">
+                                            <div class="promo_thumb">
+                                                <a href="#"><img src="img/promo3-2.png" alt="promotion item2"></a>
+                                            </div>
+
+                                            <div class="promo_info">
+                                                <h4>JOELLE 14K 귀걸이</h4>
+                                                <p class="price_origin">&#8361; 978,000</p>
+                                                <span class="price_sale">&#8361; 880,200</span>
+                                            </div>
+
+                                            <div class="promo_icon">
+                                                <a href="#"><img src="img/shoping.png" alt="장바구니에 담기"></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promo_slide">
+                        <div class="promo_banner">
+                            <img src="img/promo4.png" alt="promotion4 banner">
+                        </div>
+
+                        <div class="promo_content">
+                            <div class="promo_subhead">
+                                <div class="promo_subtext">
+                                    <p>함께할 때 더 눈부신</p>
+                                    <span>미니멀한 실루엣이 선사하는 로맨틱</span>
+                                </div>
+                            </div>
+
+                            <div class="promo_item">
+                                <div class="promo_itembox">
+                                    <ul class="item_list">
+                                        <li class="item_unit1">
+                                            <div class="promo_thumb">
+                                                <a href="#"><img src="img/promo4-1.png" alt="promotion item1"></a>
+                                            </div>
+
+                                            <div class="promo_info">
+                                                <h4>MOSAIQUE 14K 귀걸이</h4>
+                                                <p class="price_origin">&#8361; 548,000</p>
+                                                <span class="price_sale">&#8361; 465,800</span>
+                                            </div>
+
+                                            <div class="promo_icon">
+                                                <a href="#"><img src="img/shoping.png" alt="장바구니에 담기"></a>
+                                            </div>
+                                        </li>
+
+                                        <li class="item_unit2">
+                                            <div class="promo_thumb">
+                                                <a href="#"><img src="img/promo4-2.png" alt="promotion item1"></a>
+                                            </div>
+
+                                            <div class="promo_info">
+                                                <h4>MOSAIQUE 14K 목걸이</h4>
+                                                <p class="price_origin">&#8361; 598,000</p>
+                                                <span class="price_sale">&#8361; 508,300</span>
+                                            </div>
+
+                                            <div class="promo_icon">
+                                                <a href="#"><img src="img/shoping.png" alt="장바구니에 담기"></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+
+
+
+
+    <article class="newitem">       <!-- NEW ITEM -->
+        <div class="newitem_container">
+            <div class="newitem_head">
+                <h2>NEW</h2>
+                <a href="#"><img src="img/go_white.png" alt="바로가기"></a>
+            </div>
+            <div class="newitem_box wp7">
+                <div class="newitem_imgbox">
+                    <div class="newitem_m_img">
+                        <a href="#"><img src="img/m-newitem.png" alt="J collection"></a>
+                    </div>
+                    <div class="newitem_img">
+                        <a href="#"><img src="img/newitem.png" alt="J collection"></a>
+                    </div>
+                </div>
+
+                <div class="newitem_info">
+                    <h3>SIGNATURE <span class="j_point">J</span> COLLECTION</h3>
+                    <div class="newitem_txt">
+                        <span>제이에스티나의 'J' 이니셜을 담은</span>
+                        <span>간결한 링크 쉐입의 SIGNATURE J컬렉션</span>
+                        <p>두개의 J로 이루어진 유닛이 반복되는 와이드 반지</p>
+                    </div>
+                    <a href="#" class="btn_buy">BUY NOW</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+
+    <!--==================
+           SHOW ROOM
+    ====================-->
+
+    
+    <article class="show_container">
+        <div class="show_containerbox">
+            <h2>SHOWROOM</h2>
+
+            <nav class="show_category">
+                <ul class="show_categoryul">
+                    <li class="show_active" ><a href="#" class="jewelry">JEWELRY</a></li>
+                    <li><a href="#" class="bag">BAG</a></li>
+                    <li><a href="#" class="watch">WATCH</a></li>
+                    <li><a href="#" class="acc">ACC</a></li>
+                </ul>
+            </nav>
+
+            <div class="slide-box">
+                <ul class="showroom_slick">
+                            <li class="jewelry">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showJ1.png" data-list="jewelry" alt="show-img">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>MORVE 14K 랩그로운 다이아몬드 목걸이</h3>
+                                        <div>
+                                            <span>&#8361; 1,980,000</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="jewelry">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showJ2.png" alt="show-img" data-list="jewelry">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>CLOVIA 10K 랩그로운 다이아몬드 목걸이</h3>
+                                        <div>
+                                            <span>&#8361; 454,020</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="jewelry">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showJ3.png" alt="show-img" data-list="jewelry">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>BREEZE 10K 랩그로운 다이아몬드 귀걸이</h3>
+                                        <div>
+                                            <span>&#8361; 169,440</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="jewelry">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showJ4.png" alt="show-img" data-list="jewelry">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>MARIEBEL 랩그로운 다이아몬드 목걸이</h3>
+                                        <div>
+                                            <span>&#8361; 216,690</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="jewelry">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showJ5.png" alt="show-img" data-list="jewelry">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>MARIEBEL 10K 랩그로운 다이아몬드 목걸이</h3>
+                                        <div>
+                                            <span>&#8361; 361,950</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="jewelry">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showJ6.png" alt="show-img" data-list="jewelry">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>MARIEBEL 14K 3부 랩그로운 다이아 목걸이</h3>
+                                        <div>
+                                            <span>&#8361; 743,000</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="jewelry">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showJ7.png" alt="show-img" data-list="jewelry">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>MARIBEL 10K 랩그로운 다이아몬드 피어싱</h3>
+                                        <div>
+                                            <span>&#8361; 219,660</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="jewelry">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showJ8.png" alt="show-img" data-list="jewelry">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>CLEESTIA 10K 랩그로운 다이아몬드 목걸이</h3>
+                                        <div>
+                                            <span>&#8361; 320,100</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="bag">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showB1.png" alt="show-img" data-list="bag">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>BALLO LG 보스톤 숄더 BK</h3>
+                                        <div>
+                                            <span>&#8361; 126,480</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="bag">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showB2.png" alt="show-img"data-list="bag">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>WEAVE MD 숄더 위빙백 DB</h3>
+                                        <div>
+                                            <span>&#8361; 239,380</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="bag">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showB3.png" alt="show-img"data-list="bag">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>BALLO MD 스트링 보스턴숄더 PK</h3>
+                                        <div>
+                                            <span>&#8361; 128,150</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="bag">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showB4.png" alt="show-img"data-list="bag">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>JOELLE QUILTING MD 체인숄더백</h3>
+                                        <div>
+                                            <span>&#8361; 291,460</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="bag">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showB5.png" alt="show-img"data-list="bag">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>JOELLE QUILTING MD 체인숄더백</h3>
+                                        <div>
+                                            <span>&#8361; 272,950</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="bag">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showB6.png" alt="show-img"data-list="bag">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>JOELLE QUILTING SM 체인숄더백</h3>
+                                        <div>
+                                            <span>&#8361; 246,820</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="bag">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showB7.png" alt="show-img" data-list="bag">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>LEONE LG 쇼퍼 BK</h3>
+                                        <div>
+                                            <span>&#8361; 298,500</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="bag">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showB8.png" alt="show-img" data-list="bag">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>HAZEL SM 토트 BR</h3>
+                                        <div>
+                                            <span>&#8361; 190,400</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="watch">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showW1.png" alt="show-img" data-list="watch">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>JE ORIANA COCKTAIL 메탈시계</h3>
+                                        <div>
+                                            <span>&#8361; 380,000</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="watch">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showW2.png" alt="show-img" data-list="watch">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>JE 칵테일 시계</h3>
+                                        <div>
+                                            <span>&#8361; 392,000</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="watch">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showW3.png" alt="show-img" data-list="watch">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>TIARA STELLA 실크밴드 시계</h3>
+                                        <div>
+                                            <span>&#8361; 190,000</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="watch">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showW4.png" alt="show-img" data-list="watch">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>TIARA LUCIA 메탈시계</h3>
+                                        <div>
+                                            <span>&#8361; 256,000</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="watch">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showW5.png" alt="show-img" data-list="watch">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>JE ORIANA COCKTAIL 새틴 가죽시계</h3>
+                                        <div>
+                                            <span>&#8361; 256,000</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="watch">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showW6.png" alt="show-img" data-list="watch">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>TIARA 뱅글 메탈 시계</h3>
+                                        <div>
+                                            <span>&#8361; 304,000</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="watch">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showW7.png" alt="show-img" data-list="watch">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>JE ORIANA COCKTAIL 메탈시계</h3>
+                                        <div>
+                                            <span>&#8361; 392,000</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="watch">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showW8.png" alt="show-img" data-list="watch">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>JE AURORA COCKTAIL 메탈시계</h3>
+                                        <div>
+                                            <span>&#8361; 336,000</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="acc">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showA1.png" alt="show-img" data-list="acc">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>LALA J 새틴 리본 헤어집게핀</h3>
+                                        <div>
+                                            <span>&#8361; 36,500</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="acc">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showA2.png" alt="show-img" data-list="acc">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>LALA J 새틴 리본 헤어핀</h3>
+                                        <div>
+                                            <span>&#8361; 29,520</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="acc">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showA3.png" alt="show-img" data-list="acc">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>LALA J 스웨이드 헤어 스크런치</h3>
+                                        <div>
+                                            <span>&#8361; 24,360</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="acc">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showA4.png" alt="show-img" data-list="acc">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>J.LETTER 크로셰 버킷햇 IV</h3>
+                                        <div>
+                                            <span>&#8361; 38,500</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="acc">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showA5.png" alt="show-img" data-list="acc">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>LALA J 오간자 헤어 스크런치 - 퓨어 화이트</h3>
+                                        <div>
+                                            <span>&#8361; 19,760</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="acc">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showA6.png" alt="show-img" data-list="acc">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>LALA J 오간자 헤어 스크런치 - 베이비 핑크</h3>
+                                        <div>
+                                            <span>&#8361; 19,760</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="acc">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showA7.png" alt="show-img" data-list="acc">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>JOELLE 솔리드 실크스카프</h3>
+                                        <div>
+                                            <span>&#8361; 36,820</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="acc">
+                                <a href="#">
+                                    <div class="slide-imgbox">
+                                        <img src="img/showA8.png" alt="show-img" data-list="acc">
+                                    </div>
+                                    <div class="slide-txtbox">
+                                        <h3>BALLO MINI ENA 인형 키링</h3>
+                                        <div>
+                                            <span>&#8361; 39,740</span>
+                                            <button><img src="img/shoping.png" alt="장바구니 아이콘"></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+            </div>
+        </div>
+    </article>
+    
+
+    <!--==================
+             Video
+    ====================-->
+    <div class="videocontainer">
+        <iframe 
+    src="https://www.youtube.com/embed/AYmhpdYSsYI?autoplay=1&mute=1&loop=1&playlist=AYmhpdYSsYI" 
+    title="art of shine with IU" 
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share compute-pressure" 
+    allowfullscreen>
+</iframe>
+    </div>
+
+    
+
+
+    <section class="best_container">        <!-- Best Product -->
+        <div class="best_containerbox">
+
+            <div class="best_head">
+                <h2>BEST</h2>
+                <a href="#"><img src="img/go_white.png" alt="바로가기"></a>
+            </div>
+            
+            
+            <div class="best_swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <article class="best_item swiper-slide">
+                        <div class="best_img_wrap">
+                            <a href="#"><img class="best_img" src="img/best_img2.png" alt="best item"></a>
+                            <img class="best_point" src="img/best_point.png" alt="best item point">
+                        </div>
+                        <h3 class="best_txt1">[아이유 PICK] WHITEMOND 귀걸이</h3>
+                    </article>
+
+                    <article class="best_item swiper-slide">
+                        <h3 class="best_txt2">[아이유 PICK] 레이디펄 진주 귀걸이</h3>
+                        <div class="best_img_wrap">
+                            <img class="best_point_rev" src="img/best_point_rev.png" alt="best item point reverse">
+                            <a href="#"><img class="best_img" src="img/best_img1.png" alt="best item"></a>
+                        </div>               
+                    </article>
+
+                    <article class="best_item swiper-slide">
+                        <div class="best_img_wrap">
+                            <a href="#"><img class="best_img" src="img/best_img3.png" alt="best item"></a>
+                            <img class="best_point" src="img/best_point.png" alt="best item point">
+                        </div>
+                        <h3 class="best_txt1">[아이유 PICK] ETER HEART 목걸이</h3>
+                    </article>
+
+                    <article class="best_item swiper-slide">
+                        <h3 class="best_txt2">[아이유 PICK] LALA J 새틴 리본 헤어핀</h3>
+                        <div class="best_img_wrap">
+                            <img class="best_point_rev" src="img/best_point_rev.png" alt="best item point reverse">
+                            <a href="#"><img class="best_img" src="img/best_img4.png" alt="best item"></a>
+                        </div>               
+                    </article>
+
+                    <article class="best_item swiper-slide">
+                        <div class="best_img_wrap">
+                            <a href="#"><img class="best_img" src="img/best_img5.png" alt="best item"></a>
+                            <img class="best_point" src="img/best_point.png" alt="best item point">
+                        </div>
+                        <h3 class="best_txt1">[아이유 PICK] J CUBE 탄생석 목걸이</h3>
+                    </article>
+
+                    <article class="best_item swiper-slide">
+                        <h3 class="best_txt2">[아이유 PICK] 마리엘 진주 하트 귀걸이</h3>
+                        <div class="best_img_wrap">
+                            <img class="best_point_rev" src="img/best_point_rev.png" alt="best item point reverse">
+                            <a href="#"><img class="best_img" src="img/best_img6.png" alt="best item"></a>
+                        </div>               
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer">        <!-- footer -->
+        <div class="f_inner">
+            <div class="f_logo">
+                <a href="#"><img src="img/footer_logo.png" alt="footer logo"></a>
+            </div>
+
+            <div class="f_content">
+                <nav class="f_nav">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">MEMBERSHIP</a></li>
+                        <li><a href="#">매장 찾기</a></li>
+                        <li><a href="#">고객 센터</a></li>
+                        <li><a href="#">A/S</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </nav>
+
+                <ul class="f_sns">
+                    <li><a href="#"><img src="img/f_insta.png" alt="instagram logo"></a></li>
+                    <li><a href="#"><img src="img/f_face.png" alt="facebook logo"></a></li>
+                    <li><a href="#"><img src="img/f_you.png" alt="youtube logo"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+
+/* ====================
+        login form
+=====================*/
+body {font-family: 'Montserrat', 'Pretendard'}
+.home-nav {width: 90%;margin:40px auto;}
+.home-nav ul {display: flex;gap:15px;}
+.home-nav ul li a {color: #666;font-weight:500;}
+.nav-span {font-weight:500;}
+
+.login-container {width:100%;margin-top: 20px;margin-bottom:140px;}
+.login-container h2 {text-align: center;padding-bottom:30px;}
+.login-hr {width:380px;margin-bottom:50px;}
+.form-wrap {width:380px; margin:0 auto;}
+.input-row {position:relative;}
+.input-row label{font-size:14px;color:#202020;width:60px;display:inline-block;margin-bottom:40px;}
+.input-row input{width:310px;height:50px;border-radius:8px;border:1.5px solid #FFB2B8;text-indent:10px;
+                outline:none;}
+.input-row input:focus {border-color:#ff6f7b;}
+
+.submit-btn-area {display:flex;justify-content:space-between;margin-bottom:20px;margin-top:20px;}
+.submit-btn-area button, .submit-btn-area a {display:block;width:180px;height:50px;border:none;border-radius:8px;}
+
+.submit-btn-area button {background:#FFB2B8;cursor: pointer;font-size:16px;font-weight:500;color:#fff;
+                transition:.5s;}
+.submit-btn-area button:hover {background:#ff6f7b;}
+.submit-btn-area a {line-height:50px;text-align: center;background:#000; color:#fff;transition:.5s;}
+.submit-btn-area a:hover {background:#303030;}
+.find-area {text-align: right;}
+.find-area a {padding:0 10px; color:#666;}
+.find-area a:hover{text-decoration:underline;}
+.find-area span {color:#666;}
+
+/* ====================
+        login form
+=====================*/
+
+/* ====================
+       member form
+=====================*/
+
+.input-row a {color:#fff;position:absolute;width:60px;right:10px;bottom:28px;border-radius:6px;
+            width:90px;height:40px;background:#FFB2B8;line-height: 40px;text-align: center;
+            font-weight:500;}
+
+.input-row-member label{width:90px!important;}
+.input-row-member input{width:280px!important;}
+
+/* ====================
+       member form
+=====================*/
+
+
+
+@media screen and (min-width:768px) {
+
+/* ====================
+        login form
+=====================*/
+
+
+    .login-hr {width:500px;}
+    .form-wrap {width:500px;}
+    .input-row label{font-size:18px;width:80px;}
+    .input-row input{width:410px;}
+    .submit-btn-area button, .submit-btn-area a {width:230px;}
+
+
+
+/* ====================
+        login form
+=====================*/
+
+
+/* ====================
+    member form
+=====================*/
+    .input-row-member label{font-size:18px;width:110px!important;}
+    .input-row-member input{width:380px!important;}
+/* ====================
+    member form
+=====================*/
+}
+
+
+
+@media screen and (min-width:1200px) {
+
+
+
+/* ====================
+        login form
+=====================*/
+
+    .home-nav {width: 70%;margin:40px auto;}
+    .login-hr {width:500px;}
+    .form-wrap {width:500px;}
+    .input-row label{font-size:18px;width:80px;}
+    .input-row input{width:410px;}
+    .submit-btn-area button, .submit-btn-area a {width:230px;}
+
+
+/* ====================
+        login form
+=====================*/
+}
