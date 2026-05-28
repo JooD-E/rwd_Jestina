@@ -102,6 +102,8 @@ if(isset($_SESSION['userid'])) {
             document.member_form.userHp.value = "";
             document.member_form.userAddr.value = "";
             document.member_form.userEmail.value = "";
+
+            document.member_form.userId.focus();
         }
     </script>
 
@@ -351,7 +353,7 @@ if(isset($_SESSION['userid'])) {
             <li><span> &gt;</span></li>
             <li><a href="rwd_jds_login.php"> LOGIN </a></li>
             <li><span> &gt; </span></li>
-            <li><span>MEMBER</span></li>
+            <li><span class="nav-span">MEMBER</span></li>
         </ul>
     </nav>
 

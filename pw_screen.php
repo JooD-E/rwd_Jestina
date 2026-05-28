@@ -1,13 +1,12 @@
-<?php
-
-session_start();
+<?
+    session_start()
 ?>
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J&middot;estina Login</title>
+<meta charset="UTF-8">
+<title>J&middot;estina Login</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
@@ -25,6 +24,14 @@ session_start();
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/rwdapp.js"></script>
     <script src="js/rwd_main.js"></script>
+<script>
+    function reset_form(){
+            document.member_form.userId.value = "";
+            document.member_form.userHp.value = "";
+        }
+</script>
+
+
 
 </head>
 <body>
@@ -35,7 +42,7 @@ session_start();
                 <li><button class="search_btn"><img src="img/search.png" alt="search-icon"></button></li>
                 <li><a href="#"><img src="img/heart.png" alt="heart"></a></li>
                 <li><a href="#"><img src="img/shoping.png" alt="shop"></a></li>
-                <li><a href="rwd_jds_login.html"><img src="img/user.png" alt="user"></a></li>
+                <li><a href="rwd_jds_login.php"><img src="img/user.png" alt="user"></a></li>
             </ul>
         </div>
     </header>
@@ -265,74 +272,41 @@ session_start();
         </nav>
     </div>
 
+
     <div class="login-area">
         <nav class="home-nav">
             <ul>
                 <li><a href="rwd_jds.html">HOME</a></li>
                 <li><span> &gt;</span></li>
-                <li><span class="nav-span"> LOGIN </span></li>
+                <li><a href="rwd_jds_login.php"> LOGIN </a></li>
+                <li><span> &gt; </span></li>
+                <li><span class="nav-span">비밀번호 찾기</span></li>
             </ul>
         </nav>
 
         <section class="login-container">
-            <?php
-            // 로그인 상태인지 검증
-            if (isset($_SESSION['userid'])) {
-                ?>
-            
-            <h2>마이페이지</h2>
-            <hr class="login-hr">
-            <div class="form-wrap" style="text-align: center; padding: 0px 0;">
-                <p class="wecome-msg" style="font-size: 1.2rem; margin-bottom: 40px; font-family:pretendard;">
-                    안녕하세요, <strong><?php echo $_SESSION['userid']; ?></strong>님! <br>
-                    제이에스티나 방문을 환영합니다.
-                </p>
-
-                <div class="submit-btn-area" style="justify-content: center; display:flex; gap:15px;">
-                    <a href="rwd_jds.html" class="btn-home" style="display:inline-block; padding:0px 20px; border:1px solid #ccc;">홈으로 이동</a>
-                    <a href="logout.php" class="btn-logout" style="display:inline-block; padding:0px 20px; background:#000;color:#fff;">로그아웃</a>
-                </div>
-                <div class="find-area">
-                    <a href="rwd_jds_member_form_modify.php">정보 수정</a>
-                    <span> / </span>
-                    <a href="member_delete.php">회원탈퇴</a>
-                </div>
-            </div>
-            <?php
-            } else{
-            ?>
-
-            <h2>로그인</h2>
+            <h2>비밀번호 찾기</h2>
             <hr class="login-hr">
             <div class="form-wrap">
-                <form name="member_form" method="post" action="login.php">
-                    <div class="input-row">
+                <form name="member_form" method="post" action="pw_search.php">
+                    <div class="input-row input-row-member">
                         <label for="userId">아이디 :</label>
-                        <input type="text" id="userId" name="userId" placeholder="아이디를 입력하세요">
+                        <input type="text" id="userId" name="userId" placeholder="아이디을 입력하세요">
                     </div>
-                    <div class="input-row">
-                        <label for="userPw">비밀번호 :</label>
-                        <input type="password" id="userPw" name="userPw" placeholder="비밀번호를 입력하세요">
+                    <div class="input-row input-row-member">
+                        <label for="userHp">휴대폰 번호 :</label>
+                        <input type="text" id="userHp" name="userHp" placeholder="휴대폰 번호를 입력하세요">
                     </div>
 
                     <div class="submit-btn-area">
-                        <a href="rwd_jds_member_form.php">회원가입</a>
-                        <button type="submit" class="btn-login" value="로그인">로그인</button>
-                    </div>
-
-                    <div class="find-area">
-                        <a href="id_screen.php">아이디</a>
-                        <span> / </span>
-                        <a href="pw_screen.php">비밀번호 찾기</a>
+                        <a href="#" onclick="reset_form()">초기화</a>
+                        <button type="submit" class="btn-login" value="로그인">확인</button>
                     </div>
                 </form>
             </div>
-            <?php
-            }
-            ?>
+            
         </section>
     </div>
-
 
 
 
@@ -366,6 +340,6 @@ session_start();
             </div>
         </div>
     </footer>
-    
+
 </body>
 </html>

@@ -345,7 +345,7 @@ session_start();
             <li><span> &gt;</span></li>
             <li><a href="rwd_jds_login.php"> LOGIN </a></li>
             <li><span> &gt; </span></li>
-            <li><span>MEMBER</span></li>
+            <li><span class="nav-span">MEMBER</span></li>
         </ul>
     </nav>
 
