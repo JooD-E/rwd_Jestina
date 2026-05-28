@@ -62,7 +62,6 @@ session_start();
     include "dbconn.php";
     mysqli_query($connect, 'set names utf8');
 
-    // 1. 아이디 중복 체크할 때 형님 DB 컬럼명이 'id'인지 'userId'인지 꼭 확인해야 합니다!
     $sql = "select * from jestina where id = '$id'";
     $result = mysqli_query($connect, $sql);
     $exist_id = mysqli_num_rows($result);
@@ -76,21 +75,18 @@ session_start();
         ");
         exit;
     } else {
-        // 2. 가입 처리 쿼리
-        // ★ 만약 에러가 난다면 여기 괄호 안에 적힌 이름들이 DB 테이블 컬럼명과 달라서 그렇습니다.
         $sql = "insert into jestina(id, pass, name, addr, hp, email) ";
         $sql .= "values('$id', '$pass', '$name', '$addr', '$hp', '$email')";
         
-        // [★ 핵심 치트키] 쿼리가 실패하면 왜 실패했는지 에러 메시지를 화면에 박아버립니다.
         $insert_result = mysqli_query($connect, $sql);
         
         if(!$insert_result) {
             echo "<div style='color:red; font-weight:bold; padding:20px; border:2px solid red;'>";
             echo "<h3>❌ DB 저장 실패! 에러 내용:</h3>";
-            echo mysqli_error($connect); // SQL 에러 메시지 출력
-            echo "<br><br><b>형님이 작성하신 SQL문:</b> " . $sql;
+            echo mysqli_error($connect);
+            echo "<br><br>" . $sql;
             echo "</div>";
-            exit; // 에러가 났으므로 메인으로 넘어가지 않고 멈춥니다.
+            exit;
         }
     }
     
