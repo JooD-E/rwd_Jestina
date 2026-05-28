@@ -1,13 +1,5 @@
 <?php
 session_start();
-
-if(isset($_SESSION['userid'])) {
-    echo "<script>
-        alert('이미 로그인된 상태입니다. 메인페이지로 이동합니다.')
-        location.href = 'rwd_jds.html';
-    </script>";
-    exit;
-}
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -44,12 +36,6 @@ if(isset($_SESSION['userid'])) {
         {
             const re1 =/^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{6,15}$/;
             const pw=document.member_form.userPw.value;
-            if(!document.member_form.userId.value)
-            {
-                alert("아이디를 입력하세요");
-                document.member_form.userId.focus();
-                return;
-            }
             if(!document.member_form.userPw.value)
             {
                 alert("비밀번호를 입력하세요");
@@ -95,13 +81,14 @@ if(isset($_SESSION['userid'])) {
         }
 
         function reset_form(){
-            document.member_form.userId.value = "";
             document.member_form.userPw.value = "";
             document.member_form.userPwConfirm.value = "";
             document.member_form.userName.value = "";
             document.member_form.userHp.value = "";
             document.member_form.userAddr.value = "";
             document.member_form.userEmail.value = "";
+
+            document.member_form.userPw.focus();
         }
     </script>
 
@@ -343,7 +330,14 @@ if(isset($_SESSION['userid'])) {
             </ul>
         </nav>
     </div>
-
+    <?php
+        include "dbconn.php";
+        mysqli_query($connect, 'set names utf8');
+        $sql = "select * from jestina where id = '$_SESSION[userid]'";
+        $result = mysqli_query($connect,$sql);
+        $row = mysqli_fetch_array($result);
+        mysqli_close($connect);
+    ?>
 
     <nav class="home-nav">
         <ul>
@@ -356,49 +350,49 @@ if(isset($_SESSION['userid'])) {
     </nav>
 
     <section class="login-container">
-        <h2>회원가입</h2>
+        <h2>정보 수정</h2>
         <hr class="login-hr">
         <div class="form-wrap">
-            <form name="member_form" method="post" action="insert.php">
+            <form name="member_form" method="post" action="modify.php">
+                <input type="hidden" name=id value=<?=$row['id']?>>
                 <div class="input-row input-row-member">
                     <label for="userId">아이디 :</label>
-                    <input type="text" id="userId" name="userId" placeholder="아이디를 입력하세요">
-                    <a href="#" onclick="check_id(); return false;" class="btn-check-id">중복확인</a>
+                    <?= $row['id']?>
                 </div>
                 <div class="input-row input-row-member">
                     <label for="userPw">비밀번호 :</label>
-                    <input type="password" id="userPw" name="userPw" placeholder="비밀번호를 입력하세요">
+                    <input type="password" id="userPw" name="userPw" value="<?=$row['pass']?>">
                 </div>
 
                 <div class="input-row input-row-member">
                     <label for="userPwConfirm">비밀번호 확인 :</label>
-                    <input type="password" id="userPwConfirm" name="userPwConfirm" placeholder="비밀번호를 입력하세요">
+                    <input type="password" id="userPwConfirm" name="userPwConfirm" value="<?=$row['pass']?>">
                 </div>
 
                 <div class="input-row input-row-member">
                     <label for="userName">이름 :</label>
-                    <input type="text" id="userName" name="userName" placeholder="이름을 입력하세요">
+                    <input type="text" id="userName" name="userName" value="<?=$row['name']?>">
                 </div>
 
                 <div class="input-row input-row-member">
                     <label for="userAddr">주소 :</label>
-                    <input type="text" id="userAddr" name="userAddr" placeholder="주소를 입력하세요">
+                    <input type="text" id="userAddr" name="userAddr" value="<?=$row['addr']?>">
                 </div>
 
                 <div class="input-row input-row-member">
                     <label for="userHp">휴대폰 번호 :</label>
-                    <input type="text" id="userHp" name="userHp" placeholder="휴대폰 번호를 입력하세요">
+                    <input type="text" id="userHp" name="userHp" value="<?=$row['hp']?>">
                 </div>
                 
 
                 <div class="input-row input-row-member">
                     <label for="userEmail">이메일 :</label>
-                    <input type="email" id="userEmail" name="userEmail" placeholder="이메일을 입력하세요 (선택)">
+                    <input type="email" id="userEmail" name="userEmail" value="<?=$row['email']?>">
                 </div>
 
                 <div class="submit-btn-area">
                     <a href="#" onclick="reset_form()">초기화</a>
-                    <button type="button" onclick="check_input();" class="btn-submit">가입하기</button>
+                    <button type="button" onclick="check_input();" class="btn-submit">저장하기</button>
                 </div>
             </form>
         </div>

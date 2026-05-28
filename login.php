@@ -42,7 +42,7 @@
             ");
         }else{
             $row = mysqli_fetch_array($result);
-            $db_pass = $row['userPw'];
+            $db_pass = $row['pass'];
             if($pass != $db_pass)
                 {
                     echo("
@@ -53,7 +53,7 @@
                     ");
                     exit;
                 }else{
-                    $userid = $row['userId'];
+                    $userid = $row['id'];
                     $_SESSION['userid'] = $userid;
                     echo("
                         <script>

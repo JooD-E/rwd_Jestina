@@ -282,15 +282,20 @@ session_start();
             
             <h2>마이페이지</h2>
             <hr class="login-hr">
-            <div class="form-wrap" style="text-align: center; padding: 40px 0;">
-                <p class="wecome-msg" style="font-size: 1.2rem; margin-bottom: 20px;">
+            <div class="form-wrap" style="text-align: center; padding: 0px 0;">
+                <p class="wecome-msg" style="font-size: 1.2rem; margin-bottom: 40px; font-family:pretendard;">
                     안녕하세요, <strong><?php echo $_SESSION['userid']; ?></strong>님! <br>
                     제이에스티나 방문을 환영합니다.
                 </p>
 
                 <div class="submit-btn-area" style="justify-content: center; display:flex; gap:15px;">
-                    <a href="rwd_jds.html" class="btn-home" style="display:inline-block; padding:10px 20px; border:1px solid #ccc;">홈으로 이동</a>
-                    <a href="logout.php" class="btn-logout" style="display:inline-block; padding:10px 20px; background:#000;color:#fff;">로그아웃</a>
+                    <a href="rwd_jds.html" class="btn-home" style="display:inline-block; padding:0px 20px; border:1px solid #ccc;">홈으로 이동</a>
+                    <a href="logout.php" class="btn-logout" style="display:inline-block; padding:0px 20px; background:#000;color:#fff;">로그아웃</a>
+                </div>
+                <div class="find-area">
+                    <a href="rwd_jds_member_form_modify.php">정보 수정</a>
+                    <span> / </span>
+                    <a href="member_delete.php">회원탈퇴</a>
                 </div>
             </div>
             <?php
@@ -311,7 +316,7 @@ session_start();
                     </div>
 
                     <div class="submit-btn-area">
-                        <a href="rwd_jds_member_form.html">회원가입</a>
+                        <a href="rwd_jds_member_form.php">회원가입</a>
                         <button type="submit" class="btn-login" value="로그인">로그인</button>
                     </div>
 
