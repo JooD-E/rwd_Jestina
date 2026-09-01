@@ -57,15 +57,18 @@ $(function(){
     
    var $showSlider = $('.showroom_slick');
 
-   $('.show_categoryul li a').on('click', function(e){
-    e.preventDefault();
+    $('.show_categoryul li a').on('click', function(e){
+        e.preventDefault();
 
-    $('.show_categoryul li').removeClass('show_active');
-    $(this).parent('li').addClass('show_active');
+        $('.show_categoryul li').removeClass('show_active');
+        $(this).parent('li').addClass('show_active');
 
-    var targetClass = $(this).attr('class');
+        var targetClass = $(this).attr('class');
 
-    $showSlider.slick('slickUnfilter');
-    $showSlider.slick('slickFilter', '.' + targetClass);
-   })
+        $showSlider.slick('slickUnfilter');
+        $showSlider.slick('slickFilter', '.' + targetClass);
+        
+        // 🚨 추가: 필터링 후 슬라이드 위치/크기 강제 재계산
+        $showSlider.slick('setPosition');
+    });
 });
