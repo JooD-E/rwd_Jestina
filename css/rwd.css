@@ -52,8 +52,9 @@ body{background:#F8EDE3;}
 .search_item a {color:#1d1d1d;}
 .search_item span {display: block;padding: 15px 0;font-size: 14px;font-family:"pretendard";width:160px;
             margin:0 auto;overflow:hidden;white-space: nowrap; text-overflow: ellipsis;}
-.search_itembox {width: 100%; }
-.search_itembox img {width: 100%;}
+.search_itembox {width: 100%; overflow:hidden;}
+.search_itembox img {width: 100%; transition-duration: .5s;}
+.search_itembox img:hover {transform:scale(1.2);}
 
 .search_nav {padding-top:60px;padding-left:20px;}
 .search_nav_head h3 {font-size:24px;}
@@ -66,9 +67,10 @@ body{background:#F8EDE3;}
 
 
 /* 풀 메뉴 */
+#header_wrap {width: 100%;position: relative;z-index: 90;background: #fff;}
 #menu {position:relative;line-height:30px;background:#fff;z-index: 20;width:100%;
         padding:10px 0 5px;}
-#menu.fix{position:fixed; top:0;}
+#header_wrap.fix {position: fixed;top: 0;left: 0;box-shadow: 0 4px 6px rgba(0,0,0,0.05);}
 #gnb{display:flex;width:100%;padding:0 2.5%;justify-content:space-between;}
 #gnb >li {display:inline-block;width:20%;text-align: center;}
 #gnb >li >a {color:#000;position:relative;display:block;padding:0 15px;font-size: 12px;
@@ -89,7 +91,7 @@ body{background:#F8EDE3;}
     위로가기 버튼
 ================== */
 
-.page_up {position:fixed;z-index:99;bottom:-50%;right:5% ;display:none;transition:bottom 1s;}
+.page_up {position:fixed;z-index:1099!important;bottom:-0%;right:2%!important ;display:none;transition:bottom 1s;}
 .page_up_btn {background:white;border:none;border-radius: 100px;width:42px;height:42px;
     cursor: pointer;display:block;}
 .page_up_img {position:relative;right:4px;top:-3px;}
@@ -708,6 +710,9 @@ body{background:#F8EDE3;}
     .n1 li {margin-top: 10px;text-align: left;}
     .n1 li a {color:#717171;}
     .n1 li a:hover {color:#000; font-weight: bold;}
+
+    .a1 .t_menu .n1 li {padding-top:20px;}
+    .a2 .t_menu .n1 li h3 {padding-top:20px;}
 
 
 

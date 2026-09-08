@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+*,*:after, *:before {box-sizing: border-box;}
+a {text-decoration: none;}
+body { font-family: 'Pretendard', sans-serif; color: #333; background: #fff;
+    line-height: 1.6; overflow-x: hidden; background:#F8EDE3;}
+.serif-font { font-family: 'Montserrat', serif; }
+
+.product-container { display: flex; max-width: 100%; }
+
+/* 1. 좌측 이미지 영역 */
+.image-area { width: 50%; }
+.sticky-box {position: sticky;top: 0;height: 100vh;background: #fdfdfd;}
+.swiper { width: 100%; height: 100%; }
+.swiper-slide {display: flex; justify-content: center; align-items: center;font-size: 1.5rem;
+    color: #888; letter-spacing: 1px;}
+
+/* 우측 정보 영역 (Scroll) */
+.info-area { width: 50%; padding-bottom: 100px; }
+    
+.info-top { padding: 100px 8%; }
+.info-top h1 { font-size: 2.2rem; font-weight: 600; margin-bottom: 15px; letter-spacing: -0.5px; }
+.info-top .price-wrap { display: flex; align-items: baseline; gap: 15px; margin-bottom: 50px; }
+.info-top .original-price { font-size: 1.2rem; color: #999; text-decoration: line-through; }
+.info-top .sale-price { font-size: 1.8rem; font-weight: 700; color: #000; }
+
+/* =======================================
+   아코디언 UI
+======================================= */
+.accordion-wrap { margin-top: 10px; }
+.accordion-item { border-bottom: 1px solid #eee; padding: 5px 0; }
+
+.accordion-header {
+    font-size: 1rem; font-weight: 600; padding: 15px 0;
+    cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+}
+.accordion-header .icon { 
+    font-size: 1.4rem; font-weight: 300; transition: transform 0.3s ease; 
+}
+.accordion-header.active .icon { 
+    transform: rotate(45deg);
+}
+
+.accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+.accordion-content {
+    padding-bottom: 20px; font-size: 0.95rem; color: #555; line-height: 1.8;
+}
+
+
+.dark-section {background-color: #1a1a1a; color: #fff;padding: 150px 8%;text-align: center;
+    margin-top: 60px;}
+.dark-section h3 { font-size: 2.5rem; margin-bottom: 20px; font-weight: 400; letter-spacing: 2px; }
+.dark-section p { color: #a0a0a0; margin-bottom: 60px; font-size: 1.1rem; font-weight: 300; }
+.mock-img {width: 100%; height: 500px; background: #2a2a2a;margin-bottom: 30px; display: flex;
+    align-items: center; justify-content: center;color: #666; font-size: 1.2rem;}
+
+
+.extra-info { min-height: 400px; padding: 80px 8%; }
+.extra-info h4 { font-size: 1.3rem; margin-bottom: 20px; border-bottom: 2px solid #000; display: inline-block; padding-bottom: 5px; }
+
+.floating-cta {position: fixed; bottom: 0; right: 0; width: 50%;background: #000; color: #fff; 
+      text-align: center; padding: 22px 0;font-size: 1.1rem; font-weight: 600; letter-spacing: 1px;
+  cursor: pointer; z-index: 1000;transition: background 0.3s ease;}
+.floating-cta:hover { background: #333; }
+
+@media (max-width: 991px) {
+    .product-container { flex-direction: column; }
+    .image-area, .info-area { width: 100%; }
+    .sticky-box { position: relative; height: 65vh; }
+    .floating-cta { width: 100%; padding: 18px 0; }
+    .info-area { padding-bottom: 80px; }
+    .info-top, .dark-section, .extra-info { padding-left: 5%; padding-right: 5%; }
+    .dark-section h3 { font-size: 2rem; }
+    .mock-img { height: 350px; }
+}
