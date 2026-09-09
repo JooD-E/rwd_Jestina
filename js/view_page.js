@@ -6,9 +6,13 @@ document.addEventListener("DOMContentLoaded", function(){
         el: ".swiper-pagination",
         clickable: true,
       },
+      navigation:{
+        nextEl: ".swiper-button-next-custom",
+        prevEl: ".swiper-button-prev-custom",
+      },
       loop: true,
       autoplay: {
-        delay: 3000,
+        delay: 4000,
         disableOnInteraction: false,
       },
     });
