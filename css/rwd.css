@@ -2,7 +2,7 @@
 
 *,*:after, *:before {box-sizing: border-box;}
 a {text-decoration: none;}
-body{background:#F8EDE3;}
+body{background:#F8EDE3; font-family: 'Montserrat', 'Pretendard', sans-serif;}
 
 /* 헤더 */
 #header {width:100%;background:#fff;}
@@ -91,7 +91,7 @@ body{background:#F8EDE3;}
     위로가기 버튼
 ================== */
 
-.page_up {position:fixed;z-index:1099!important;bottom:-0%;right:2%!important ;display:none;transition:bottom 1s;}
+.page_up {position:fixed;z-index:99!important;bottom:-0%;right:2%!important ;display:none;transition:bottom 1s;}
 .page_up_btn {background:white;border:none;border-radius: 100px;width:42px;height:42px;
     cursor: pointer;display:block;}
 .page_up_img {position:relative;right:4px;top:-3px;}
