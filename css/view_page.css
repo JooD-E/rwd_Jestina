@@ -66,7 +66,7 @@ body { font-family: 'Pretendard', sans-serif; color: #333; background: #fff;
 }
 
 /* 우측 정보 영역 (Scroll) */
-.info-area { width: 50%; padding-bottom: 100px; }
+.info-area { width: 50%; }
     
 .info-top { padding: 100px 8%; }
 .info-top h1 { font-size: 2.2rem; font-weight: 600; margin-bottom: 15px; letter-spacing: -0.5px; }
@@ -222,7 +222,7 @@ body { font-family: 'Pretendard', sans-serif; color: #333; background: #fff;
 }
 
 
-.floating-cta {position: fixed; bottom: 0; right: 0; width: 50%;background: #000; color: #fff; 
+.floating-cta {position: sticky; bottom: 0; right: 0; width: 100%;background: #767676; color: #fff; 
       text-align: center; padding: 22px 0;font-size: 1.1rem; font-weight: 600; letter-spacing: 1px;
   cursor: pointer; z-index: 98;transition: background 0.3s ease;}
 .floating-cta:hover { background: #333; }
@@ -232,7 +232,6 @@ body { font-family: 'Pretendard', sans-serif; color: #333; background: #fff;
     .image-area, .info-area { width: 100%; }
     .sticky-box { position: relative; height: 65vh; }
     .floating-cta { width: 100%; padding: 18px 0; }
-    .info-area { padding-bottom: 80px; }
     .info-top, .dark-section, .extra-info { padding-left: 5%; padding-right: 5%; }
     .dark-section h3 { font-size: 2rem; }
     
