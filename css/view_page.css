@@ -191,11 +191,12 @@ body { font-family: 'Pretendard', sans-serif; color: #333; background: #fff;
 
 .step-num {display:inline-block;font-size:1rem; font-weight: 600; color:#e59a9a;background:#fff;
             padding: 0 15px;position:relative; z-index: 2; margin-bottom:12px;}
-.step-list p {font-size: 1.05rem; font-weight: 500; color:#333;}
+.step-list p {font-weight: 500; color:#333;
+            word-break:keep-all; letter-spacing: -0.5px;line-height:1.4;}
 
 .notice-details {text-align:center;}
 .notice-details h4 {font-size:1.6rem; font-weight:600; margin-bottom:10px;}
-.notice-details .sub-desc{font-size: 0.95rem; color:767676; margin-bottom:60px;}
+.notice-details .sub-desc{font-size: 0.95rem; color:#767676; margin-bottom:60px;}
 
 .notice-grid {display:grid;grid-template-columns: repeat(2, 1fr); gap:60px 40px;text-align: left;}
 
